@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { recordApiResult } from "@/lib/observability/server";
 import { buildSignedProfile, replacePlaceholdersInConfig } from "@/utils/signProfile";
 
-export const runtime = "nodejs";
+export const dynamic = "force-static";
 
 export async function GET(req: Request) {
   const startedAt = performance.now();

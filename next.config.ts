@@ -4,6 +4,10 @@ import type { NextConfig } from "next";
 const NOINDEX_HEADER_VALUE = "noindex, nofollow, noarchive, nosnippet";
 
 const nextConfig: NextConfig = {
+  // 1. เพิ่ม 2 บรรทัดนี้ลงไปเพื่อสั่งให้ Export เป็น Static HTML
+  output: "export",
+  images: { unoptimized: true },
+
   async redirects() {
     return [
       {
@@ -49,6 +53,7 @@ const nextConfig: NextConfig = {
     ];
   },
 };
+
 export default withSentryConfig(nextConfig, {
   org: process.env.SENTRY_ORG ?? "my-projects-vy",
   project: process.env.SENTRY_PROJECT ?? "udid-tools",

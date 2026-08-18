@@ -20,7 +20,7 @@ const SITE_NAME = "UDID Tools";
 const TWITTER = "@alextartmin";
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

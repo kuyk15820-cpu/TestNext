@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import SuccessClient from "@/app/success/SuccessClient";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "Device Information Result",

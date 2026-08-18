@@ -1,0 +1,90 @@
+{
+  "name": "udid-tools",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Open-source Safari-based UDID lookup tool for iPhone and iPad beta testing, ad hoc device registration, mobile QA, and iOS provisioning workflows.",
+  "keywords": [
+    "udid",
+    "iphone-udid",
+    "ipad-udid",
+    "ios-udid",
+    "udid-lookup",
+    "udid-checker",
+    "ios-beta-testing",
+    "ad-hoc-distribution",
+    "device-registration",
+    "provisioning-profile",
+    "configuration-profile",
+    "mobile-qa",
+    "mdm",
+    "ios-development",
+    "open-source"
+  ],
+  "homepage": "https://www.udid.tools",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baskerville42/udid-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Baskerville42/udid-tools/issues"
+  },
+  "author": {
+    "name": "Alexander Tartmin",
+    "url": "https://www.linkedin.com/in/alexandertartmin",
+    "email": "hello@udid.tools"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "npm@10.9.0",
+  "overrides": {
+    "postcss": "8.5.10"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "indexnow:submit": "node scripts/submit-indexnow.mjs",
+    "indexnow:dry-run": "node scripts/submit-indexnow.mjs --dry-run",
+    "postbuild": "next-sitemap",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
+    "@sentry/nextjs": "^10.59.0",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
+    "axios": "^1.18.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "crypto": "^1.0.1",
+    "lucide-react": "^0.562.0",
+    "motion": "^12.23.26",
+    "next": "^15.5.21",
+    "next-sitemap": "^4.2.3",
+    "node-forge": "^1.4.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "simple-icons": "^16.22.0",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.6.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/node-forge": "^1.3.13",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/xml2js": "^0.4.14",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "prettier": "^3",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
